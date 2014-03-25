@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	#menu {
+		top:0px;
+		left:0px;
+		background-color: white;
+		height: 150px;
+		width: 100%;
+		position: fixed; 
+		z-index: 1;
+		
+	}
+
+	#box1, #box2, #box3, #box4, #box5, #box6 {
+    	width: 25%; 
+    	height: 400px; 
+    	left: 0%; 
+    	top: 0%; 
+		background-color: white;
+	}
+
+	#box2 {
+		left: 25%;
+		
+		height: 250px; 
+		background-color: white;
+		
+	}
+	
+	#box3 {
+		left: 25%;
+		top: 250px;
+		
+		height: 300px; 
+		background-color: white;
+		
+	}
+	
+	#box4 {
+		left: 50%;
+		height: 280px; 
+		background-color: white;
+		
+	}
+	
+	#box5 {
+		left: 50%;
+		top: 280px;
+		height: 180px; 
+		background-color: white;
+		
+	}
+	
+	#box6 {
+		left: 50%;
+		height: 180px; 
+		background-color: white;
+		
+	}
+	
+	#wrapper {
+		position: fixed; 
+		width: 100%; 
+
+	}
+	
+	#mainConetent {
+		position: fixed; 
+		width: 100%; 
+		background-color: white;
+	}
+
+	</style>
+
+</head>
+<body>
+
+
+
+	<div id="menu"  data-0p="transform:translate(0, 0px);" data-25p="transform:translate(0, -75px);">
+
+		<hr style="height: 0px; border-bottom: 2px solid #ac9e91; margin-top: 0px;  width: 100%; position:absolute; top : 100%">
+
+	</div>
+		
+		<div id="mainConetent" data-0p="transform:translate(0, 200px);" data-333p="transform:translate(0, -800px);">
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+			asdfasdfasdfasdfasd<br>
+		</div>
+		
+		
+	<div id="wrapper" data-100p="transform:translate(0, 100px);" data-500p="transform:translate(0, -1100px);">
+	
+	<split content="content.html">
+		<div id="box1" type="box"  cut-top="0" cut-left="0" 
+			data-0="transform:translate(0, 530px);" data-100p="transform:translate(0, 50px);"></div>
+		
+		<div id="box2" type="box" cut-top="0" cut-left="-100%" 
+			data-0="transform:translate(0,800px);" data-100p="transform:translate(0,50px);"></div>
+			
+		<div id="box3" type="box" cut-top="-250px" cut-left="-100%" 
+			data-0="transform:translate(0,1050px);" data-100p="transform:translate(0,50px);"></div>
+			
+		<div id="box4" type="box" cut-top="0px" cut-left="-200%"
+			data-0="transform:translate(0,300px);" data-100p="transform:translate(0,50px);"></div>
+
+		<div id="box5" type="box" cut-top="-280px" cut-left="-200%"
+			data-0="transform:translate(0,700px);" data-100p="transform:translate(0,50px);"></div>
+
+
+	</split>
+	
+	</div>
+
+
+	
+
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="PageSplitter.js"></script>
+	<script type="text/javascript" src="skrollr.min.js"></script>
+
+	<script type="text/javascript">
+		
+		skrollr.init();
+		createSplitBoxes();
+	</script>
+
+
+</body>
+</html>
